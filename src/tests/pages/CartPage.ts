@@ -22,5 +22,9 @@ export class CartPage extends Base
     {
           await this.page.locator(locators.removebtn).click()
     }   
+    async checkprice()
+    {
+        console.log("validate price")
+    }
 
 }
