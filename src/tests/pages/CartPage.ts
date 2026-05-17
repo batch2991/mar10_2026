@@ -27,5 +27,8 @@ export class CartPage extends Base
         console.log("validate price")
          console.log("checking - git hub validate price")
     }
-
+async validateprice()
+{
+    
+}
 }
