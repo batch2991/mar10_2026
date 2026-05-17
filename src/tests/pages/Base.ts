@@ -14,6 +14,6 @@ export class Base
     }
     f3()
     {
-        
+        console.log("code in f3")
     }
 }
