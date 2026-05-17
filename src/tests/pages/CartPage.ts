@@ -29,10 +29,10 @@ export class CartPage extends Base
     }
     async f1()
     {
+
+    }
+    async validateprice()
+    {
         
     }
-async validateprice()
-{
-    
-}
 }
