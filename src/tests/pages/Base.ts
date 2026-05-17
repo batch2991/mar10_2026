@@ -12,4 +12,8 @@ export class Base
     {
         await this.page.goto(url)
     }
+    f3()
+    {
+        
+    }
 }
