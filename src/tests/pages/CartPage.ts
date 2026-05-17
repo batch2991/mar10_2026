@@ -33,6 +33,6 @@ export class CartPage extends Base
     }
     async validateprice()
     {
-        
+        console.log("validate price")
     }
 }
