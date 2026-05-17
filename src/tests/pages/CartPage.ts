@@ -31,5 +31,8 @@ export class CartPage extends Base
     {
         
     }
-
+async validateprice()
+{
+    
+}
 }
