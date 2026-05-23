@@ -8,7 +8,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') })
 
 Before(async function(this:MyWorld){
 
-    this.browser=await chromium.launch({headless:false})
+    this.browser=await chromium.launch({headless:true})
     this.page=await this.browser.newPage()
     this.url=process.env.url||''
     this.username=process.env.saucedemo_user||''
