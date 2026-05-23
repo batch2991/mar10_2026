@@ -1,10 +1,12 @@
-import {Before,After} from "@cucumber/cucumber"
+import {Before,After,setDefaultTimeout} from "@cucumber/cucumber"
 import {MyWorld} from "./MyWorld"
 import { chromium } from "@playwright/test"
 
 import dotenv from 'dotenv'
 import path from 'path'
 dotenv.config({ path: path.resolve(process.cwd(), '.env') })
+
+setDefaultTimeout(60000)
 
 Before(async function(this:MyWorld){
 
@@ -15,6 +17,6 @@ Before(async function(this:MyWorld){
     this.password=process.env.saucedemo_pwd||''    
 })
 After(async function(this:MyWorld){
-    await this.page.close()
-    await this.browser.close()
+   await this.page.close()
+   await this.browser.close()
 })
